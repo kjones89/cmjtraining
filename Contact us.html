@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> CMJ Training | Contact Us </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+color: #f2f2f2;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("forklift.png");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.blink {
+	-webkit-animation: blink 1.5s step-end infinite;
+	animation: blink 1.5s step-end infinite;
+	}
+	@webkit-keyframes blink {50% {visibility: hidden; }}
+	@keyframes blink {50% {visibility: hidden; }}
+	
+
+input[type=text], select, textarea {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+   color: white;
+   text-align: center;
+@media screen and (max-height: 750px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about us.html">About</a>
+  <a href="contact us.html">Contact</a>
+</div>
+
+<div id="main">
+   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+  document.getElementById("main").style.marginLeft = "175px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>CMJ Training | Contact Us</h2>
+  <h1 style="font-size:30px">Contact infomation and form</h1>
+   <p> Craig McArthur |<a href ="mailto:craig@cmjtraining.com.au" style= "color: #f2f2f2"> craig@mjtraining.com.au</a> | <a href ="tel:0438-691-966" style= "color: #f2f2f2"> 0438 691 966 </a> </p>  
+ <p> Mike Jones |<a href ="mailto:michael@cmjtraining.com.au" style= "color: #f2f2f2"> michael@cmjtraining.com.au </a>|<a href ="tel:0427-826-393" style= "color: #f2f2f2"> 0427 826 393 </a> </p>
+ 
+</div>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
+<div class="container">
+  <div class="row">
+
+            <div class="col-xl-8 offset-xl-2">
+
+                
+
+                
+
+
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required"
+                                        data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required"
+                                        data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                                        data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Type your message here  *" rows="4" required="required"
+                                data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+
+						
+                        </div>	
+					
+                        
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                       
+                        
+
+                    </div>
+
+                </form>
+
+            </div>
+            
+</div>
+<div class="footer">
+<p> &copy; CMJ Training 2019 | Web Master Kate Jones </p>
+  <p>Follow us on <a href= 'https://www.instagram.com/cmjtraining' > Facebook   </a></p> 
+  <p> Like us on <a href="https://www.facebook.com/cmjtraining" > Instagram </a> </p>
+
+</div>
+
+</body>
+</html>
+
+   
